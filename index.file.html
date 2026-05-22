@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification and Morphology of Poxviruses - Syrpai Ryngksai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .slide { display: none; min-height: 80vh; }
+        .active { display: flex; }
+        body { background-color: #f8fafc; font-family: sans-serif; }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+
+    <!-- Container -->
+    <div id="presentation" class="w-full max-w-4xl bg-white shadow-2xl rounded-xl overflow-hidden p-8 border-t-8 border-blue-800">
+        
+        <!-- SLIDE 1: Title -->
+        <div class="slide active flex-col justify-center items-center text-center">
+            <h1 class="text-5xl font-bold text-blue-900 mb-6">Classification & Morphology of Poxviruses</h1>
+            <p class="text-2xl text-gray-600 mb-12">A Comprehensive Academic Review</p>
+            <div class="mt-auto border-t pt-4">
+                <p class="text-xl font-semibold">Presented by: <span class="text-blue-700">Syrpai Ryngksai</span></p>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: Introduction -->
+        <div class="slide flex-col">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">Introduction</h2>
+            <ul class="list-disc ml-6 space-y-4 text-lg">
+                <li>Largest and most complex human viruses.</li>
+                <li>Only human DNA virus that replicates entirely in the <strong>cytoplasm</strong>.</li>
+                <li>Family: <em>Poxviridae</em>.</li>
+                <li>Notable for being the first disease eradicated (Smallpox).</li>
+                <li>High medical significance due to re-emergence of zoonotic poxviruses (e.g., Mpox).</li>
+            </ul>
+        </div>
+
+        <!-- SLIDE 3: Classification -->
+        <div class="slide flex-col">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Classification of Poxviridae</h2>
+            <table class="w-full text-left border-collapse border border-gray-300">
+                <tr class="bg-blue-50">
+                    <th class="border p-3">Subfamily</th>
+                    <th class="border p-3">Genus</th>
+                    <th class="border p-3">Important Species</th>
+                </tr>
+                <tr><td class="border p-3" rowspan="3">Chordopoxvirinae</td><td class="border p-3">Orthopoxvirus</td><td class="border p-3">Variola, Vaccinia, Monkeypox</td></tr>
+                <tr><td class="border p-3">Parapoxvirus</td><td class="border p-3">Orf virus</td></tr>
+                <tr><td class="border p-3">Molluscipox</td><td class="border p-3">Molluscum contagiosum</td></tr>
+            </table>
+        </div>
+
+        <!-- SLIDE 4: Morphology (EM View) -->
+        <div class="slide flex-col items-center text-center">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Morphology & Structure</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Poxvirus_virion_structure.png" alt="Poxvirus Structure" class="h-64 mb-4">
+            <p class="text-sm text-gray-500">Source: <a href="https://commons.wikimedia.org/wiki/File:Poxvirus_virion_structure.png" class="text-blue-500 underline" target="_blank">Wikimedia Commons</a></p>
+            <ul class="text-left mt-4 text-lg">
+                <li><strong>Shape:</strong> Brick-shaped or ovoid.</li>
+                <li><strong>Size:</strong> Large (200-300 nm). Visible under Light Microscope (Paschen bodies).</li>
+                <li><strong>Core:</strong> Contains double-stranded DNA.</li>
+                <li><strong>Lateral Bodies:</strong> Unique protein structures flanking the core.</li>
+            </ul>
+        </div>
+
+        <!-- SLIDE 5: Replication (The Unique Feature) -->
+        <div class="slide flex-col">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">Why Cytoplasmic Replication?</h2>
+            <p class="text-lg mb-4">Unlike other DNA viruses that require the host nucleus, Poxviruses carry their own machinery:</p>
+            <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                <ul class="space-y-2 text-lg">
+                    <li>✓ Carries its own <strong>DNA-dependent RNA polymerase</strong>.</li>
+                    <li>✓ Carries own transcription factors.</li>
+                    <li>✓ Produces "Inclusion Bodies" (Guarnieri bodies) in the cytoplasm.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SLIDE 6: Summary & Viva Tips -->
+        <div class="slide flex-col">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">Viva Quick-Fire</h2>
+            <div class="space-y-4">
+                <p><strong>Q:</strong> Largest human virus? <strong>A:</strong> Poxvirus.</p>
+                <p><strong>Q:</strong> Why do they replicate in the cytoplasm? <strong>A:</strong> They bring their own enzymes.</p>
+                <p><strong>Q:</strong> What are Guarnieri bodies? <strong>A:</strong> Cytoplasmic inclusions in Smallpox.</p>
+            </div>
+        </div>
+
+        <!-- SLIDE 7: Thank You -->
+        <div class="slide flex-col justify-center items-center text-center">
+            <h2 class="text-4xl font-bold text-blue-900 mb-6">Thank You</h2>
+            <p class="text-xl text-gray-700">Presentation by: <strong>Syrpai Ryngksai</strong></p>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="mt-6 flex gap-4">
+        <button onclick="prevSlide()" class="bg-blue-800 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-900">Previous</button>
+        <button onclick="nextSlide()" class="bg-blue-800 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-900">Next</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+    </script>
+</body>
+</html>
